@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+pseudotřídy
+  - podle stavu - :hover, :visited, :focus
+  - podle pořadí
+*/
+
+button {
+  display: block;
+  font-size: 1.3rem;
+  padding: 0.35em 0.7em;
+  background: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color .3s linear;
+  transition: color .3s linear;
+  /* transition-property: background-color;
+  transition-duration: 300ms;
+  transition-timing-function: linear */
+  /* animatable */
+}
+
+button:hover {
+  background: blue;
+  color: white;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+
+input:focus {
+  background: lightblue;
+}

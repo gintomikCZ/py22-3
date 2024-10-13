@@ -1,0 +1,56 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  border: 1px solid black;
+}
+
+/* li:last-child {
+  border-bottom: none;
+} */
+
+li {
+  padding: .35em .7em;
+  /* border-bottom: 1px solid red; */
+}
+
+li:not(:last-child) {
+  border-bottom: 1px red solid;
+}
+
+
+
+/* li:first-child {
+  background: lightgreen;
+}
+li:last-child {
+  background: lightblue;
+}
+li:nth-child(4) {
+  background: yellow;
+} */
+
+/* li:first-of-type, div:first-of-type {
+  background: lightgreen;
+} */
+
+
+
+/*
+:first-child - první potomek svého rodiče
+:last-child - poslední potomek svého rodiče
+:nth-child(2) - n-tý potomek svého rodiče
+:nth-child(2n)
+:nth-child(even) - každý párny / sudý potomek svého rodiče
+:nth-child(odd) - každý nepárny / lichý potomek svého rodiče
+
+-of-type - potomek svého rodiče daného typu
+
+:not(selektor, pseudotřída)
+
+li:not(.my-class) - pro všechny li, která nemají třídu my-class
+li:not([class]) - pro všechny li, které namjí atribut class
+
+
+*/
